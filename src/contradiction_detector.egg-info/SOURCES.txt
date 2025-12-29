@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-src/contradiction_detector/__init__.py
-src/contradiction_detector/schemas.py
-src/contradiction_detector.egg-info/PKG-INFO
-src/contradiction_detector.egg-info/SOURCES.txt
-src/contradiction_detector.egg-info/dependency_links.txt
-src/contradiction_detector.egg-info/requires.txt
-src/contradiction_detector.egg-info/top_level.txt

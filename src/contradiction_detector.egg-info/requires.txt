@@ -1,4 +1,0 @@
-pydantic>=2.5
-
-[dev]
-ruff>=0.4.0
