@@ -10,6 +10,7 @@ __pycache__/
 
 # ツール系
 .ruff_cache/
+.mypy_cache/
 .pytest_cache/
 .coverage
 htmlcov/
