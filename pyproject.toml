@@ -5,6 +5,7 @@ description = "Detects contradictions in text and returns structured results."
 requires-python = ">=3.11"
 dependencies = [
   "pydantic>=2.5",
+  "langchain>=0.2.0",
 ]
 
 [project.optional-dependencies]
