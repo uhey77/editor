@@ -2,9 +2,11 @@ from __future__ import annotations
 
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import Runnable, RunnableLambda
+from langchain_core.runnables import Runnable
+from langchain_core.runnables import RunnableLambda
 
-from .parsers import format_instructions, parse_contradiction_result
+from .parsers import format_instructions
+from .parsers import parse_contradiction_result
 from .schemas import ContradictionResult
 
 DEFAULT_PROMPT_TEMPLATE = """You are a text consistency checker.
