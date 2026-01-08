@@ -1,13 +1,5 @@
-from .parsers import (
-    build_contradiction_parser,
-    format_instructions,
-    parse_contradiction_result,
-)
-from .pipeline import (
-    build_contradiction_chain,
-    build_prompt_template,
-    run_contradiction_detection,
-)
+from .parsers import build_contradiction_parser, format_instructions, parse_contradiction_result
+from .pipeline import build_contradiction_chain, build_prompt_template, run_contradiction_detection
 from .schemas import (
     Claim,
     Contradiction,

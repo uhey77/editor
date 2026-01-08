@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Literal, Optional
+from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
@@ -24,7 +24,7 @@ class EvidenceSpan(StrictBaseModel):
     text: str
 
     @model_validator(mode="after")
-    def validate_span(self) -> "EvidenceSpan":
+    def validate_span(self) -> EvidenceSpan:
         if self.start < 0:
             raise ValueError("start must be >= 0")
         if self.end <= self.start:
@@ -41,7 +41,7 @@ class Claim(StrictBaseModel):
 
 class Entity(StrictBaseModel):
     text: str
-    normalized: Optional[str] = None
+    normalized: str | None = None
     entity_type: EntityType
 
 
@@ -56,5 +56,5 @@ class Contradiction(StrictBaseModel):
 
 
 class ContradictionResult(StrictBaseModel):
-    document_id: Optional[str] = None
+    document_id: str | None = None
     contradictions: list[Contradiction]
